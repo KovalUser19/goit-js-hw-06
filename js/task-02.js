@@ -14,5 +14,4 @@ ingredients.forEach(elem => {
   li.classList.add("item");
   console.log(li.classList);
   ulIngred.append(li);
-
 });
