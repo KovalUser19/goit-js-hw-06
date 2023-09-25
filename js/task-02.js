@@ -6,6 +6,7 @@ const ingredients = [
   'Condiments',
 ];
 const ulIngred = document.querySelector("#ingredients");
+const fragment = document.createDocumentFragment();
 
 ingredients.forEach(elem => {
   let li = document.createElement("li");
@@ -13,5 +14,8 @@ ingredients.forEach(elem => {
   console.log(li);
   li.classList.add("item");
   console.log(li.classList);
-  ulIngred.append(li);
+  fragment.append(li);
 });
+
+ulIngred.append(fragment);
+ulIngred.style.listStyle = "none";
